@@ -1,0 +1,45 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Asistencia Duoc</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding-vertical">
+  <div id="rotate-container">
+    <ion-card class="ion-text-center ion-padding-vertical">
+      <ion-card-title class="ion-text-center">
+        <ion-label>
+          <h2>Recuperar contraseña</h2>
+        </ion-label>
+      </ion-card-title>
+
+      <ion-card-content>
+        <ion-label>
+          <h3>Paso 1: Ingrese su correo</h3>
+        </ion-label>
+
+        <ion-item>
+          <ion-input label="{{ 'ingreso.Label.Email' | translate}}"
+          labelPlacement="floating"
+          [(ngModel)]="correo"
+          placeholder="{{ 'ingreso.Placeholder.Email' | translate}}"
+          type="email" required>
+          </ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-button shape="block" (click)="ingresarCorreo()">Recuperar Contraseña</ion-button>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+    
+    <ion-item>
+      <ion-button shape="block" (click)="regresar()">Regresar</ion-button>
+    </ion-item>
+  </div>
+</ion-content>
+
+<ion-content>
+
+  
+</ion-content>

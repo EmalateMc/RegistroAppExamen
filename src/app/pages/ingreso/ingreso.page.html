@@ -1,0 +1,83 @@
+<ion-header>
+  <ion-toolbar class="transparent-bg">
+    <div slot="start" class="ion-margin">
+      <app-language #languageSelected></app-language>
+    </div>
+    <div class="show-in-landscape">
+      <h1 class="glow-text"> {{ '' | translate }} </h1>
+    </div>
+    <div slot="end" class="ion-margin">
+      <ion-button shape="round" size="small" (click)="navigateTheme()">
+        {{'ingreso.Button.DarkMode' | translate}}
+        <ion-icon slot="start" name="color-wand-outline"></ion-icon>
+      </ion-button>
+    </div>
+   </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="centrar">
+    <div class="enmarcar-login">
+      <img  src="../../../assets/img/pao.jpg" alt="DUOC" width="100%" height="350" class="foto-fondo" />
+      <ion-card class="ion-text-center">
+
+        <ion-card-content class="ion-padding-vertical">
+          <ion-card-header>
+            <ion-toolbar>
+              <ion-title>Asistencia Duoc</ion-title>
+            </ion-toolbar>
+          </ion-card-header>
+
+          <ion-card class="ion-text-center ion-padding-vertical">
+            <ion-card-title class="ion-text-center">
+              <ion-label>
+                <h2>{{'ingreso.Title.ingreso' | translate}}</h2>
+              </ion-label>
+            </ion-card-title>
+
+            <ion-card-content>
+              <ion-item>
+                <ion-input label="{{ 'ingreso.Label.Email' | translate }}"
+                labelPlacement="floating"
+                [(ngModel)]="cuenta"
+                placeholder="{{ 'ingreso.Placeholder.Email' | translate}}">
+                </ion-input>
+              </ion-item>
+
+              <ion-item>
+                <ion-input label="{{ 'ingreso.Label.Password' | translate }}"
+                labelPlacement="floating"
+                type="password"
+                [(ngModel)]="password"
+                placeholder="{{ 'ingreso.placeholder.password' | translate}}">
+                </ion-input>
+              </ion-item>
+
+              <ion-item>
+                <ion-button class="enter-button normal-text" shape="round" (click)="ingresar()">
+                  {{ 'ingreso.Button.Login' | translate }}
+                </ion-button>
+              </ion-item>
+            </ion-card-content>
+          </ion-card>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-button color="secondary" shape="block" (click)="ruta()">
+    {{ 'ingreso.Button.GoDuoc' | translate }}
+  </ion-button>
+  <ion-button color="primary" shape="block" (click)="registro()">
+    {{ 'ingreso.Button.Signin' | translate }}
+  </ion-button>
+
+  <ion-button color="primary" shape="block" (click)="olvidar()">
+    {{ 'ingreso.Button.ForgotPassword' | translate }}
+  </ion-button>
+
+</ion-footer>
+
+

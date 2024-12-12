@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <!-- Contenedor para el título, con animación -->
+    <div class="title-wrapper" style="flex-grow: 1; display: flex; justify-content: center; align-items: center;">
+      <ion-title #titulo size="large">
+        <h1 #animatedTitle class="animated-title">
+          {{ 'WelcomePage.Animated.Title' | translate }}
+        </h1>
+      </ion-title>
+    </div>
+
+    <!-- Botón de salir alineado a la derecha -->
+    <div class="logout-wrapper" slot="end" style="display: flex; align-items: center;">
+      <ion-button (click)="logout()" fill="clear" size="large">
+        <ion-icon name="log-out-outline" color="light"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-toolbar>
+</ion-header>

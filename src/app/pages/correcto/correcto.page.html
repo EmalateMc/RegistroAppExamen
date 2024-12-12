@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Sistema de Asistencia Duoc</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="ion-text-center">
+    <ion-icon name="checkmark-circle-outline" size="large" color="success"></ion-icon>
+    <h2 class="result-title">{{'CorreoPage.Label.Correctans' | translate }}</h2>
+    <ion-card class="password-card">
+      <img src="../../../assets/img/bueno.jpg" alt="malo" class="foto"/>
+      <ion-card-header>
+        <ion-card-title class="password-title">{{'CorreoPage.Label.Mypassword' | translate }}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content class="password-content">
+        <p class="password">{{ password }}</p>
+      </ion-card-content>
+    </ion-card>
+    <ion-button expand="full" color="primary" (click)="navigateBack()">{{'CorreoPage.Label.Mypassword' | translate }}</ion-button>
+  </div>
+</ion-content>

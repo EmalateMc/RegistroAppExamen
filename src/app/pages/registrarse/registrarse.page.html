@@ -1,0 +1,44 @@
+<div class="centrar">
+  <div class="enmarcar">
+    <div>
+      <h3>{{ 'HomePage.Button.Mydata' | translate }}</h3>
+    </div>
+    <img alt="DUOC" src="../../../assets/img/LogoDouc.jpeg" class="foto-portada">
+
+    <ion-input [(ngModel)]="usuario.Nombre" [label]="'WelcomePage.Input.Name' | translate" labelPlacement="floating"></ion-input>
+    <ion-input [(ngModel)]="usuario.Apellido" [label]="'WelcomePage.Input.LastName' | translate" labelPlacement="floating"></ion-input>
+    <ion-input [(ngModel)]="usuario.correo" [label]="'WelcomePage.Input.Email' | translate" labelPlacement="floating"></ion-input>
+    <ion-input [(ngModel)]="usuario.cuenta" [label]="'WelcomePage.Input.Account' | translate" labelPlacement="floating"></ion-input>
+    <ion-input [(ngModel)]="usuario.preguntaSecreta" [label]="'WelcomePage.Input.SecretQuestion' | translate" labelPlacement="floating"></ion-input>
+    <ion-input [(ngModel)]="usuario.respuestaSecreta" [label]="'WelcomePage.Input.SecretAnswer' | translate" labelPlacement="floating"></ion-input>
+    <ion-input [(ngModel)]="usuario.password" [label]="'WelcomePage.Input.Password' | translate" labelPlacement="floating" type="password"></ion-input>
+    <ion-input [(ngModel)]="usuario.password" [label]="'WelcomePage.Input.RepeatPassword' | translate" labelPlacement="floating" type="password"></ion-input>
+
+    <ion-select [(ngModel)]="usuario.NivelEducacional.id"
+                (ionChange)="actualizarNivelEducacional($event)"
+                [label]="'WelcomePage.Select.EducationLevel' | translate" labelPlacement="floating">
+      <ion-select-option *ngFor="let nivelEducacional of listaNivelesEducacionales"
+                         [value]="nivelEducacional.id">
+        {{ nivelEducacional.nombre }}
+      </ion-select-option>
+    </ion-select>
+
+        <ion-item>
+          <ion-datetime 
+          [(ngModel)]="usuario.FechaNacimiento"
+          label="Nacimiento"
+          labelPlacement="floating">
+          </ion-datetime>
+        </ion-item>
+
+    <ion-input [(ngModel)]="usuario.direccion" [label]="'WelcomePage.Input.Address' | translate" labelPlacement="floating"></ion-input>
+
+    <ion-button (click)="guardarUsuario()">
+      {{ 'ForoPage.Button.Update' | translate }}
+    </ion-button>
+
+    <br>
+    <br>
+    <br>
+  </div>
+</div>

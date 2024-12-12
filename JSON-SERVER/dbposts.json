@@ -1,0 +1,12 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "titulo": "No me cuenta",
+      "cuerpo": "No me ha contado la asistencia, por mas que he hecho lo del Qr.",
+      "autor": "Emanuel Binimelis",
+      "dia": "20/11/2024",
+      "ImagenAutor": "https://example.com/images/Emanuel_Binimelis.jpg"
+    }
+  ]
+}

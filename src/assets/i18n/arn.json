@@ -1,0 +1,69 @@
+{
+    "AppName": "Asistencia Duoc",
+    "AuthorText": "Ñamku ngen: ",
+    "Author": "Emanuel e Ismael",
+    "Language": "Ñeü",
+    "Language.English": "Inchelem",
+    "Language.Spanish": "Ñolmapu",
+    "Language.Mapudungun": "Mapudungun",
+
+    "Start.StartNewExperience": "Ñamün ñi ñamku mew",
+
+    "ingreso.Title.ingreso": "Inñülelu",
+    "ingreso.Label.Email": "Email",
+    "ingreso.Placeholder.Email": "Püleymi email ñi",
+    "ingreso.Label.Password": "Ñi tïküm",
+    "ingreso.Placeholder.Password": "Püleymi tïküm",
+    "ingreso.Button.Login": "Inñülelu",
+    "ingreso.Button.Signin": "Üllüñmu",
+    "ingreso.Button.ForgotPassword": "Ñi tïküm mew öngen",
+    "ingreso.Button.DarkMode": "Pewma",
+    "ingreso.Button.GoDuoc": "Ñamün a DUOC",
+
+    "WelcomePage.Title.Wellcome": "Marüfün Duoc mew!",
+
+    "inicio.Button.Wellcome": "Püleymi",
+    "inicio.Button.Scan": "Ñamün",
+    "inicio.Button.miclase": "Ñi pülemen",
+    "inicio.Button.usuarios": "Ñamkelümapu",
+    "inicio.Button.Forum": "Fórum",
+
+    "ThemePage.Label.ColorTheme": "Ñeü amu mew",
+    "ThemePage.Color.Light": "Lof",
+    "ThemePage.Color.Dark": "Pewma",
+    "ThemePage.Color.Green": "Ñamün",
+    "ThemePage.Color.Red": "Pewma",
+    "ThemePage.Color.Facebook": "Facebook",
+    "ThemePage.Color.Instagram": "Instagram",
+    "ThemePage.Color.Duoc": "Duoc",
+
+    "ThemePage.Button.Primary": "Lefünwün Küme",
+    "ThemePage.Button.Secondary": "Ñamün Küme",
+    "ThemePage.Button.Tertiary": "Pülemen Küme",
+    "ThemePage.Button.Success": "Küme", 
+    "ThemePage.Button.Warning": "Ñi ñielün",
+    "ThemePage.Button.Danger": "Ñi ñiemün",
+    "ThemePage.Button.Light": "Pewma",
+    "ThemePage.Button.Dark": "Ñüleuwün",
+    "ThemePage.Button.Home": "Püleymi",
+    "ThemePage.Button.Logout": "Ñamün mülüfün",
+
+    "ThemePage.Card.Title": "Ñamün uñüm",
+    "ThemePage.Card.Subtitle": "Ñamün adüm",
+    "ThemePage.Card.Content": "Ñamün uñüm mew. Ñamkülenka üllüñ, adüm iñche üllüñ kütünme mew.",
+    
+    "ThemePage.List.Title": "Ñamün küme",
+    "ThemePage.List.Item1": "Ñamün 1",
+    "ThemePage.List.Item2": "Ñamün 2",
+    "ThemePage.List.Item3": "Ñamün 3",
+
+    "ThemePage.Calendar.Title": "Üllüm",
+
+    "ThemePage.Form.Title": "Ñi ñamku",
+    "ThemePage.Form.NameLabel": "Ñi namün",
+    "ThemePage.Form.NamePlaceholder": "Püleymi üllüñ rumeñ",
+    "ThemePage.Form.DescriptionLabel": "Ñi ñielün",
+    "ThemePage.Form.DescriptionPlaceholder": "Ñielün mew, püleymi ñi ñielün",
+    "ThemePage.Form.ToggleLabel": "Ñamün koñomün",
+    "ThemePage.Form.CheckboxLabel": "Ñamün küme"
+}

@@ -1,0 +1,31 @@
+<h1>{{ 'HomePage.Button.Users' | translate }}</h1>
+<ion-content>
+  <!-- Se muestra la lista de usuarios -->
+  <ion-list>
+    <ion-item *ngFor="let usuario of usuarios">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>{{ usuario.Nombre }} {{ usuario.Apellido }}</ion-card-title>
+          <ion-card-subtitle>{{ usuario.cuenta }}</ion-card-subtitle>
+        </ion-card-header>
+
+        <ion-card-content>
+          <p>{{ usuario.correo }}</p>
+          
+          <!-- Botón para eliminar usuario, solo si no es admin -->
+          <ion-button 
+            color="danger" 
+            *ngIf="usuario.cuenta !== 'admin'" 
+            (click)="eliminarUsuario(usuario.cuenta)">
+            <ion-icon name="trash"></ion-icon> Eliminar
+          </ion-button>
+          
+          <!-- Mensaje visible solo si el usuario es admin -->
+          <p *ngIf="usuario.cuenta === 'admin'" style="color: red;">
+            No puedes eliminar la cuenta "admin".
+          </p>
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+</ion-content>

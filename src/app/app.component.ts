@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Usuario } from './model/usuario';
+import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { TestBed } from '@angular/core/testing';
+import { activeAnimations } from '@ionic/core/dist/types/utils/overlays';
 import { IonApp, IonRouterOutlet } from '@ionic/angular/standalone';
 
 @Component({
@@ -9,4 +12,5 @@ import { IonApp, IonRouterOutlet } from '@ionic/angular/standalone';
 })
 export class AppComponent {
   constructor() {}
+
 }

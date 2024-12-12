@@ -1,0 +1,36 @@
+<ion-footer>
+  <ion-toolbar color="primary">
+    <ion-segment value="codigoqr" [(ngModel)]="componenteSeleccionada" (ionChange)="cambiarComponente($event)">
+      <ion-segment-button *ngIf="!opcionesDisponibles.includes('usuarios')" value="codigoqr">
+        <ion-icon name="home-outline"></ion-icon>
+        {{'HomePage.Button.Wellcome' | translate }}
+      </ion-segment-button>
+
+      <ion-segment-button *ngIf="!opcionesDisponibles.includes('usuarios')" value="miclase">
+        <ion-icon name="school-outline"></ion-icon>
+        {{'HomePage.Button.Myclass' | translate }}
+      </ion-segment-button>
+
+      <ion-segment-button value="foro">
+        <ion-icon name="pencil-outline"></ion-icon>
+        {{'HomePage.Button.Forum' | translate}}
+      </ion-segment-button>
+
+      <ion-segment-button  value="misdatos">
+        <ion-icon name="grid-outline"></ion-icon>
+        {{'HomePage.Button.Mydata' | translate}}
+      </ion-segment-button>
+
+      <!-- Solo se muestra el botón de "usuarios" para el admin -->
+      <ion-segment-button *ngIf="opcionesDisponibles.includes('usuarios')" value="usuarios">
+        <ion-icon name="people-outline"></ion-icon>
+        {{'HomePage.Button.Users' | translate}} <!-- Aquí el nombre del botón -->
+      </ion-segment-button>
+
+      <ion-segment-button value="miruta" *ngIf="!opcionesDisponibles.includes('usuarios')" (click)="redirigir()">
+        <ion-icon name="locate-outline"></ion-icon>
+        {{'HomePage.Button.Map' | translate}}
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,12 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+  <app-language *ngIf="componenteSeleccionada === 'language'"></app-language>
+  <app-codigoqr *ngIf="componenteSeleccionada === 'codigoqr'" (scanned)="qrFueEscaneado($event)" (stopped)="qrFueDetenido()"></app-codigoqr>
+  <app-miclase *ngIf="componenteSeleccionada === 'miclase'" #miclase></app-miclase>
+  <app-forum *ngIf="componenteSeleccionada === 'foro'"></app-forum>
+  <app-misdatos *ngIf="componenteSeleccionada === 'misdatos'"></app-misdatos>
+  <app-usuarios *ngIf="componenteSeleccionada === 'usuarios'"></app-usuarios> 
+</ion-content>
+
+<app-footer [opcionesDisponibles]="opcionesDisponibles"></app-footer>

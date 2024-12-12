@@ -1,0 +1,15 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Asistencia Duoc</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <h2>{{ pregunta }}</h2>
+  <ion-item>
+    <ion-label position="floating">{{'CorreoPage.Label.Answer' | translate}}</ion-label>
+    <ion-input [(ngModel)]="respuesta" type="text"></ion-input>
+  </ion-item>
+
+  <ion-button expand="full" shape="round" (click)="verificarRespuesta()">{{'CorreoPage.Button.Send' | translate}}</ion-button>
+  <ion-button shape="round" (click)="navigateBack()">{{'HomePage.Button.Back' | translate}}</ion-button>
+</ion-content>

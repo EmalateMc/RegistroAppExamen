@@ -1,0 +1,47 @@
+<div class="centrar">
+  <div class="enmarcar">
+    <h1 id="saludo">{{ 'WelcomePage.Title.Wellcome' | translate }}</h1>
+    
+    <h1>{{ usuario.Nombre }} {{ usuario.Apellido }}</h1>
+
+    <h1 *ngIf="!usuario.asistencia.idAsignatura">
+      {{ 'assistance.information' | translate }}
+    </h1>
+
+    <div *ngIf="usuario.asistencia.idAsignatura">
+      <h1>{{ 'Presente' | translate }}</h1>
+      <div class="asistencia-grid">
+        <div class="header"> {{ 'Bloque.inicio' | translate }}: </div>
+        <div class="content"> {{ usuario.asistencia!.bloqueInicio }} </div>
+
+        <div class="header"> {{ 'Bloque.termino' | translate }}: </div>
+        <div class="content"> {{ usuario.asistencia!.bloqueTermino }} </div>
+
+        <div class="header"> {{ 'Dia' | translate }}: </div>
+        <div class="content"> {{ usuario.asistencia!.dia }} </div>
+
+        <div class="header"> {{ 'Hora.inicio' | translate }}: </div>
+        <div class="content"> {{ usuario.asistencia!.horaInicio }} </div>
+
+        <div class="header"> {{ 'Hora.fin' | translate }}: </div>
+        <div class="content"> {{ usuario.asistencia!.horaFin }} </div>
+
+        <div class="header"> {{ 'ID.asignatura' | translate }}: </div>
+        <div class="content"> {{ usuario.asistencia!.idAsignatura }} </div>
+
+        <div class="header"> {{ 'Nombre.asignatura' | translate }}: </div>
+        <div class="content"> {{ usuario.asistencia!.nombreAsignatura }} </div>
+
+        <div class="header"> {{ 'Nombre.profesor' | translate }}: </div>
+        <div class="content"> {{ usuario.asistencia!.nombreProfesor }} </div>
+
+        <div class="header"> {{ 'Seccion' | translate }}: </div>
+        <div class="content"> {{ usuario.asistencia!.seccion }} </div>
+
+        <div class="header"> {{ 'Sede' | translate }}: </div>
+        <div class="content"> {{ usuario.asistencia!.sede }} </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
